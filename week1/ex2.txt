@@ -1,0 +1,16 @@
+   65  ls -h
+   66  ls --help
+   67  ls -help
+   68  man ls
+   69  ls ~/usr/bin/ "gcc" | sort -r > ~/OS/week1/ex1.txt
+   70  ls ~/usr/bin "gcc" | sort -r > ~/OS/week1/ex1.txt
+   71  ls ~/usr/bin gcc | sort -r > ~/OS/week1/ex1.txt
+   72  ls /usr/bin "gcc" | sort -r > ~/OS/week1/ex1.txt
+   73  ls /usr/bin gcc | sort -r > ~/OS/week1/ex1.txt
+   74  ls /usr/bin/ gcc | sort -r > ~/OS/week1/ex1.txt
+   75  ls /usr/bin/ "gcc" | sort -r > ~/OS/week1/ex1.txt
+   76  ls /usr/bin/ "gcc" > ~/OS/week1/ex1.txt
+   77  ls "gcc" /usr/bin/ | sort -r > ~/OS/week1/ex1.txt
+   78  ls gcc /usr/bin/ | sort -r > ~/OS/week1/ex1.txt
+   79  ls /usr/bin/ | grep gcc | sort -r > ~/OS/week1/ex1.txt
+   80  cat > ex1_commands.sh
