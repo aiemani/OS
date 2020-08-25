@@ -1,29 +1,27 @@
 //
 //  main.c
-//  Exercise 4
+//  Exercise 2
 //
 //  Created by Roman Nabiullin on 25.08.2020.
 //  Copyright © 2020 Innopolis Univesity. All rights reserved.
 //
 
 #include <stdio.h>
-
-void swap(int *a, int *b) {
-    
-    int tmp = *b;
-    *b = *a;
-    *a = tmp;
-}
+#include <string.h>
 
 int main(int argc, const char * argv[]) {
     
-    int a, b;
+    int length = 10000;
+    char string[length];
     
-    scanf("%d %d", &a, &b);
+    gets(string);
     
-    swap(&a, &b);
+    for (int i = strlen(string) - 1; 0 <= i; i--) {
+        putchar(string[i]);
+    }
     
-    printf("%d %d\n\n", a, b);
+    printf("\n");
     
     return 0;
 }
+
