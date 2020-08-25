@@ -9,7 +9,14 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    char c1, c2, *p;
+    
+    c1 = 'a';
+    p = &c1;
+    c2 = *p;
+    
+    printf("Amazing!\n%c equals to %c\n", c1, c2);
+    
     return 0;
 }
