@@ -11,7 +11,6 @@
 		29A260D924FE5A710070C11B /* ex1.c in Sources */ = {isa = PBXBuildFile; fileRef = 29A260D824FE5A710070C11B /* ex1.c */; };
 		29A260FC24FE5DCA0070C11B /* ex2.c in Sources */ = {isa = PBXBuildFile; fileRef = 29A260FB24FE5DCA0070C11B /* ex2.c */; };
 		29A260FE24FE5DD60070C11B /* ex3.c in Sources */ = {isa = PBXBuildFile; fileRef = 29A260FD24FE5DD60070C11B /* ex3.c */; };
-		29A2610024FE5DE20070C11B /* ex4.c in Sources */ = {isa = PBXBuildFile; fileRef = 29A260FF24FE5DE20070C11B /* ex4.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,7 +71,6 @@
 		29A260F424FE5ABA0070C11B /* Exercise 4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Exercise 4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A260FB24FE5DCA0070C11B /* ex2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ex2.c; sourceTree = "<group>"; };
 		29A260FD24FE5DD60070C11B /* ex3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ex3.c; sourceTree = "<group>"; };
-		29A260FF24FE5DE20070C11B /* ex4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ex4.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +119,6 @@
 				29A260D224FE5A0B0070C11B /* Exercise 1 */,
 				29A260DF24FE5AA10070C11B /* Exercise 2 */,
 				29A260EA24FE5AAD0070C11B /* Exercise 3 */,
-				29A260F524FE5ABA0070C11B /* Exercise 4 */,
 				29A260C424FE59E00070C11B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,14 +165,6 @@
 				29A260FD24FE5DD60070C11B /* ex3.c */,
 			);
 			path = "Exercise 3";
-			sourceTree = "<group>";
-		};
-		29A260F524FE5ABA0070C11B /* Exercise 4 */ = {
-			isa = PBXGroup;
-			children = (
-				29A260FF24FE5DE20070C11B /* ex4.c */,
-			);
-			path = "Exercise 4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +340,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A2610024FE5DE20070C11B /* ex4.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
