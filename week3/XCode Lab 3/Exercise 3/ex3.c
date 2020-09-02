@@ -34,12 +34,13 @@ void insert_node(struct node **head, int val) {
 
 void delete_node(struct node **head, int val) {
     
-    // Delete the fisrt occurence of val in list
     struct node *prev;
     prev = *head;
 
-    // if there are no nodes
-    if (*head == NULL) return;
+    // case: there are no nodes at all
+    if (*head == NULL) {
+        return;
+    }
     
     // case: removing head node
     if ((*head)->value == val) {
@@ -68,9 +69,7 @@ void delete_node(struct node **head, int val) {
 
 void print_list(struct node *head) {
     while (head != NULL) {
-        
         printf("%d ", head->value);
-        
         head = head->next;
     }
 }
@@ -78,6 +77,7 @@ void print_list(struct node *head) {
 int main(int argc, const char * argv[]) {
     struct node *head = NULL;
     
+    insert_node(&head, 0);
     insert_node(&head, 16);
     insert_node(&head, 42);
     insert_node(&head, -8);
