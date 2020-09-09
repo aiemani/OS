@@ -7,9 +7,19 @@
 //
 
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main()
+{
+    int arri[] = {1, 2 ,3};
+    int *ptri = arri;
+ 
+    char arrc[] = {1, 2 ,3};
+    char *ptrc = arrc;
+ 
+    printf("sizeof arri[] = %lu \n\n", sizeof(arri));
+    printf("sizeof ptri = %lu \n\n", sizeof(ptri));
+ 
+    printf("sizeof arrc[] = %lu \n\n", sizeof(arrc));
+    printf("sizeof ptrc = %lu \n\n", sizeof(ptrc));
+ 
     return 0;
 }
