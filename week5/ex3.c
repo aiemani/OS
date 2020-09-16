@@ -6,12 +6,13 @@
 #define MAX_BUFFER_SIZE 999999
 
 // It was asked not to use protection mechanisms.
-// So then one may see that the first output of a thread after outputs of another thread contains wrong buffer size value. 
+// So then one may see that some outputs of a thread after outputs of another thread contains wrong buffer size value. 
 
-//This happens since during the printf execution the thread is blocked, and after the activation it contains old value that might have changed .
+// This happens since during the printf execution the thread is blocked, and after the activation it contains old value that might have changed .
 
 int buffer_size;
 
+// produc
 void* producer(void* argument) {
 
   int iter = 0;
@@ -58,16 +59,19 @@ void* consumer(void* argument) {
 
 int main() {
 
+  // initial buffer size value
   buffer_size = 0;
 
   pthread_t producer_thread;
   pthread_t consumer_thread;
   
+  // creating threads
   pthread_create(&producer_thread, NULL, &producer, NULL);
   pthread_create(&consumer_thread, NULL, &consumer, NULL);
 
   pthread_join(producer_thread, NULL);
 
+  // exits
   pthread_exit(NULL);
   exit(EXIT_SUCCESS);
 }
