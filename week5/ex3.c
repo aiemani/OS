@@ -12,7 +12,7 @@
 
 int buffer_size;
 
-// produc
+// producer thread function
 void* producer(void* argument) {
 
   int iter = 0;
