@@ -1,2 +1,2 @@
-gcc -o ex1 ex1.c
-./ex1 < input.txt
+gcc ex1.c -o ex1
+./ex1 < test1_1.txt

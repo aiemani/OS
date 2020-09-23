@@ -4,6 +4,7 @@
 
 // Structure that represents a process
 typedef struct process{
+  // Required metrics
   int arriving_time;
   int burst_time;
   int completion_time;
@@ -11,7 +12,7 @@ typedef struct process{
   int turn_around_time;
 } process;
 
-// Global variables for the number of processes
+// Global variable for the number of processes
 int number_of_processes;
 
 // Evaluate values "Average waiting time" and "Average turn around time"
@@ -99,4 +100,5 @@ void print_table(process processes[]) {
   printf("\nAverage waiting time: %.2f\n", mean_wt(processes));
   printf("Average turn around time: %.2f\n", mean_tat(processes));
   printf("==========================\n");
+  printf("**************************\n");
 }
