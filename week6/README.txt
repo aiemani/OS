@@ -15,9 +15,10 @@ This test shows that:
     since it takes the fastest job first 
     in order to decrease average waiting time and hence average turn around time
 
->> Round-robin is more effective than previous two
+>> Round-robin appears to be more effective than previous two
     since each process gets an equal share of the CPU,
     hence average waiting time and hence average turn around time
-    can be decreased even more
+    can be decreased even more IF the appropriate quantum will 
+    be chosen for the problem (however, it is not always the case)
 
 Have a nice day!
