@@ -1,1 +1,1 @@
-size $(which size) > ex1.txt
+size ex2 > ex1.txt

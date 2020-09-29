@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  24467	   1464	   1336	  27267	   6a83	/usr/bin/size
+   2307	    648	      8	   2963	    b93	ex2
