@@ -1,0 +1,5 @@
+16b virtual address size implies 2^16 addresses
+
+a page is 8kb = 2^13b
+
+so, a single-level linear page table may contain up to (2^16)/(2^13) = 8 entries
