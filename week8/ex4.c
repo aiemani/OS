@@ -14,7 +14,7 @@ int main() {
     memset(ptr, 0, size);                 // filling it with '0'
 
     getrusage(RUSAGE_SELF, &usage);       // retrieving information about memory usage
-		printf("%ld KB\n", usage.ru_maxrss);  // printing 
+    printf("%ld KB\n", usage.ru_maxrss);  // printing 
 
     sleep(1);                             // sleep for 1 sec at each iteration
   }
