@@ -1,0 +1,17 @@
+Here we have r = read, w = write, and x = execute.
+Parameters -(***)(***)(***) are 3 binary digits where 
+  each triple (***) corresond to a binary digit such that 
+  000 = ---, rwx = 111, rw- = 110 etc.
+
+First triple stands for the user, second for the group, third for others.
+
+Thus, we have, 
+  660 means: -rw-rw-rw-
+  775 means: -rwxrwxr-x
+  777 means: -rwxrwxrwx
+
+
+Outputs are:
+  -rw-rw-rw- 1 runner runner 51 Oct 21 18:41 ex1.txt
+  -rwx---rwx 1 runner runner 51 Oct 21 18:42 ex1.txt
+  -rwxrwxrwx 1 runner runner 51 Oct 21 18:42 ex1.txt

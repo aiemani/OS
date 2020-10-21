@@ -1,0 +1,2 @@
+/home/runner/OS-3/week10/tmp/file1.txt
+/home/runner/OS-3/week10/link1
