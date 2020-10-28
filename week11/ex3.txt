@@ -1,0 +1,12 @@
+OUTPUT: 
+  First program prints "Hello" 2 times
+  Seconmd one - "Hello" once in the parent process
+
+EXPLANATION:
+  1. The point here is that stdout is LINE-BUFFERED when it points to a terminal. Consider the Program 1.
+
+  2. printf("Hello");  has no newline. 
+  
+  3. During fork(); memory spaces of child and parent processes are identical.
+  
+  4. Therefore, in program 1, both parent and child will print "Hello".
